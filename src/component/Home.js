@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Logo from '../img/logo.png';
+
 class Home extends Component{
     state = {
         address: "",
@@ -23,7 +25,7 @@ class Home extends Component{
         return(
             <div>
                 <div className="row">
-                    <h1>Open Rent</h1>
+                    <img src={Logo} alt="Logo"/>
                     <div className="row">
                         <div className="input-field col s12">
                         <input
