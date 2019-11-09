@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Home from './component/Home';
+import Edit from './component/Edit';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Home />
+        <Edit />
       </header>
     </div>
   );

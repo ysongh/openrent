@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Logo from '../img/logo.png';
 
-class Home extends Component{
+class Edit extends Component{
     state = {
         address: "",
         apt: "",
@@ -81,4 +81,4 @@ class Home extends Component{
     };
 };
 
-export default Home;
+export default Edit;
