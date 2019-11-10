@@ -12,7 +12,7 @@ class AddressList extends Component{
         return(
             <div className="apartmentList">
                 <div className="flex-row flex-center flex-align-items-center flex-justify-content-space-between">
-                    <h2 className="apartmentList__title">List of Apartment</h2>
+                    <h2 className="apartmentList__title">Existing Lease for Building</h2>
                     <Link to="/create" className="waves-effect waves-light btn-large">
                         Create
                     </Link>
@@ -22,9 +22,10 @@ class AddressList extends Component{
                     <thead>
                     <tr>
                         <th>Address</th>
-                        <th>Floor</th>
+                        <th>Apt#</th>
                         <th>Price</th>
-                        <th>Lease</th>
+                        <th>Lease Month</th>
+                        <th>Rent Ctrl</th>
                         <th>Action</th>
                     </tr>
                     </thead>
@@ -37,6 +38,12 @@ class AddressList extends Component{
                                 <td>{address.floor}</td>
                                 <td>${address.price}</td>
                                 <td>{address.year}</td>
+                                <td>
+                                <label>
+                                    <input type="checkbox" checked={address.problem ? "checked" : ""} />
+                                    <span></span>
+                                </label>
+                                </td>
                                 <td className="flex-row">
                                     <Link to={`/edit/${address.id}`} className="waves-effect waves-light btn">
                                         <i class="fas fa-edit"></i>

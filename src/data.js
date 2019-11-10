@@ -5,15 +5,17 @@ export let addressData = [
         floor: '3F',
         room: 5,
         price: "2500",
-        year: "2020",
+        year: "12/2020",
+        problem: true
     },
     {
         id: '2',
         address: '12 Jay St',
-        floor: '2B',
+        floor: '3F',
         room: 4,
         price: "2100",
-        year: "2019",
+        year: "12/2019",
+        problem: true
     },
     {
         id: '3',
@@ -21,6 +23,7 @@ export let addressData = [
         floor: '4D',
         room: 3,
         price: "1900",
-        year: "2020",
+        year: "09/2020",
+        problem: false
     }
 ]
