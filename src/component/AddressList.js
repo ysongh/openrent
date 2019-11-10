@@ -48,9 +48,9 @@ class AddressList extends Component{
                                     <Link to={`/edit/${address.id}`} className="waves-effect waves-light btn">
                                         <i className="fas fa-edit"></i>
                                     </Link>
-                                    <button className="waves-effect waves-light btn">
+                                    <a href="https://hcr.ny.gov/system/files/documents/2019/04/ra89.pdf" target="_blank" rel="noopener noreferrer" className="waves-effect waves-light btn red darken-1">
                                         <i className="fas fa-flag"></i>
-                                    </button>
+                                    </a>
                                 </td>
                             </tr>
                         );
