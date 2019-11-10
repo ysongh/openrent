@@ -10,7 +10,7 @@ function App() {
   return (
     <Router className="App">
       <header className="App-header">
-        <img src={Logo} alt="Logo"/>
+        <img src={Logo} className="image" alt="Logo"/>
         <Route exact path="/" component={Weclome} />
         <Route exact path="/addressList" component={AddressList} />
         <Route exact path="/edit" component={Edit} />

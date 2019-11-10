@@ -18,7 +18,7 @@ class AddressList extends Component{
                         <th>Address</th>
                         <th>Floor</th>
                         <th>Price</th>
-                        <th>Lease Year</th>
+                        <th>Lease</th>
                         <th>Action</th>
                     </tr>
                     </thead>
@@ -26,15 +26,18 @@ class AddressList extends Component{
                     <tbody>
                     {this.state.data.map(address => {
                         return(
-                            <tr>
+                            <tr key={address.id}>
                                 <td>{address.address}</td>
                                 <td>{address.floor}</td>
                                 <td>${address.price}</td>
                                 <td>{address.year}</td>
-                                <td>
-                                <Link to="/edit" className="waves-effect waves-light btn">
-                                    Detail
-                                </Link>
+                                <td className="flex-row">
+                                    <Link to="/edit" className="waves-effect waves-light btn">
+                                        Detail
+                                    </Link>
+                                    <button className="waves-effect waves-light btn">
+                                        Complain
+                                    </button>
                                 </td>
                             </tr>
                         );
