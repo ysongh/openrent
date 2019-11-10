@@ -46,10 +46,10 @@ class AddressList extends Component{
                                 </td>
                                 <td className="flex-row">
                                     <Link to={`/edit/${address.id}`} className="waves-effect waves-light btn">
-                                        <i class="fas fa-edit"></i>
+                                        <i className="fas fa-edit"></i>
                                     </Link>
                                     <button className="waves-effect waves-light btn">
-                                        <i class="fas fa-flag"></i>
+                                        <i className="fas fa-flag"></i>
                                     </button>
                                 </td>
                             </tr>

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+import { addressData } from '../data';
+
 class CreateApartment extends Component{
     state = {
         address: "12 Jay St",
@@ -11,6 +13,8 @@ class CreateApartment extends Component{
         signedDate: "",
         startDate: "",
         endDate: "",
+        landLordName: "",
+        landLordAddress: "",
 
     }
 
@@ -19,19 +23,24 @@ class CreateApartment extends Component{
     }
 
     onSubmit(){
-        // const newData = {
-        //     address: this.state.address,
-        //     floor: this.state.apt,
-        //     room: this.state.room,
-        //     price: this.state.price,
-        //     year: 2020
-        // }
+        const newData = {
+            id: addressData.length + 1,
+            address: this.state.address,
+            floor: this.state.apt,
+            room: this.state.room,
+            price: this.state.price,
+            year: "12/2020",
+            signedDate: this.state.signedDate,
+            startDate: this.state.startDate,
+            endDate: this.state.endDate,
+        }
 
-        // addressData.push(newData);
-        // this.props.history.push("/addressList");
-        console.log(this.state.signedDate)
-        console.log(this.state.startDate)
-        console.log(this.state.endDate)
+        addressData.push(newData);
+        this.props.history.push("/addressList");
+
+        console.log(this.state.landLordAddress)
+        console.log(this.state.landLordName)
+        
     }
 
     onSetSignedDate(date) {
@@ -134,6 +143,30 @@ class CreateApartment extends Component{
                                 selected={this.state.endDate}
                                 onChange={this.onSetEndDate.bind(this)} 
                                 dateFormat="yyyy/MM/dd" />
+                        </div>
+                        <div className="row">
+                            <div className="col s12">
+                            <label htmlFor="landLordName">Landlord Name</label>
+                            <input
+                                type="text" 
+                                className="validate"
+                                name="landLordName"
+                                placeholder="Jay Reality LLC"
+                                value={this.state.landLordName}
+                                onChange={this.onChange.bind(this)} />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col s12">
+                            <label htmlFor="landLordAddress">Landlord Address</label>
+                            <input
+                                type="text" 
+                                className="validate"
+                                name="landLordAddress"
+                                placeholder="17 Lorimer street, 11211,  NYC"
+                                value={this.state.landLordAddress}
+                                onChange={this.onChange.bind(this)} />
+                            </div>
                         </div>
                     </div>
                     <button className="btn-large waves-effect waves-light button__submit" onClick={this.onSubmit.bind(this)} >Submit</button>
