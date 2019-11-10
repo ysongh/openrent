@@ -10,6 +10,14 @@ body{
   font-family: 'Lustria', serif;
 }
 
+nav{
+  background-color: transparent;
+}
+
+nav ul a {
+  color: black;
+}
+
 /* welcome */
 .weclome{
   padding: .5rem 2rem;
@@ -57,6 +65,7 @@ body{
 /* utilities */
 .image{
   width: 10rem;
+  height: 4rem;
 }
 
 .flex-row{
