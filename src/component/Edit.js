@@ -1,11 +1,26 @@
 import React, { Component } from 'react';
 
+import { addressData } from '../data';
+
 class Edit extends Component{
     state = {
         address: "",
         apt: "",
         room: "",
         price: ""
+    }
+
+    componentDidMount(){
+        addressData.forEach(address => {
+            if(address.id === this.props.match.params.id){
+                this.setState({
+                    address: address.address,
+                    apt: address.floor,
+                    room: address.room,
+                    price: address.price
+                })
+            }
+        });
     }
 
     onChange(e){
@@ -40,7 +55,7 @@ class Edit extends Component{
                         <div className="col s12">
                         <label htmlFor="apt">Apt Number</label>
                         <input
-                            type="number"
+                            type="text"
                             className="validate"
                             name="apt"
                             placeholder="1"

@@ -32,7 +32,7 @@ class AddressList extends Component{
                                 <td>${address.price}</td>
                                 <td>{address.year}</td>
                                 <td className="flex-row">
-                                    <Link to="/edit" className="waves-effect waves-light btn">
+                                    <Link to={`/edit/${address.id}`} className="waves-effect waves-light btn">
                                         Detail
                                     </Link>
                                     <button className="waves-effect waves-light btn">

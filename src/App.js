@@ -13,7 +13,7 @@ function App() {
         <img src={Logo} className="image" alt="Logo"/>
         <Route exact path="/" component={Weclome} />
         <Route exact path="/addressList" component={AddressList} />
-        <Route exact path="/edit" component={Edit} />
+        <Route exact path="/edit/:id" component={Edit} />
       </header>
     </Router>
   );
