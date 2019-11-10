@@ -73,6 +73,11 @@ class Edit extends Component{
                     <h2 className="weclome__title">View Lease</h2>
                     <div className="row">
                         <div className="col s12">
+                            <p className="apartmentList__key">Public Key - 0x7099A33596e3ED69306A274122443cD430639C03</p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col s12">
                         <label htmlFor="address">Address</label>
                         <input
                             type="text" 
