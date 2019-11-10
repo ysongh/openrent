@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Weclome = () => {
     return(
         <div>
-            <h1 className="mb-2">Weclome</h1>
+            <h1 className="weclome__title mb-2">Weclome to Open Rent</h1>
             <div className="weclome__buttonGroup">
                 <Link to="/" className="waves-effect waves-light btn-large mb-2">
                     Lease Public Key 

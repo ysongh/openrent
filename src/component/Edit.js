@@ -38,7 +38,7 @@ class Edit extends Component{
         return(
             <div>
                 <div className="row">
-                    <h2>Edit Apartment</h2>
+                    <h2 className="weclome__title">Edit Apartment</h2>
                     <div className="row">
                         <div className="col s12">
                         <label htmlFor="address">Address</label>
