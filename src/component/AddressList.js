@@ -12,7 +12,10 @@ class AddressList extends Component{
         return(
             <div className="apartmentList">
                 <div className="flex-row flex-center flex-align-items-center flex-justify-content-space-between">
-                    <h2 className="apartmentList__title">Existing Lease for Building</h2>
+                    <div>
+                        <h2 className="apartmentList__title">Lease Public key</h2>
+                        <p className="apartmentList__key">0x7099A33596e3ED69306A274122443cD430639C03</p>
+                    </div>
                     <Link to="/create" className="waves-effect waves-light btn-large">
                         Create
                     </Link>

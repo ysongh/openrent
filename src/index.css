@@ -49,6 +49,11 @@ nav ul a {
 .apartmentList__title{
   font-size: 2.5rem;
   margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.apartmentList__key{
+  font-size: .8rem;
 }
 
 /* edit apartment */
