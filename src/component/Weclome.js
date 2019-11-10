@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
+import PhoneImage from '../img/phone.png';
+
 const Weclome = () => {
     return(
         <div className="weclome">
-            <h1 className="weclome__title mb-2">Weclome to Open Rent</h1>
+            <h1 className="weclome__title mb-2">Weclome to <span className="purple-color bold">Open Rent</span></h1>
             <p className="weclome__paragraph">Bringing transparency to New York Rental Market</p>
+            <img src={PhoneImage} className="image-big" alt="Logo"/>
             <div className="weclome__area">
                 <div className="row">
                     <div className="col s10">

@@ -29,8 +29,8 @@ nav ul a {
 }
 
 .weclome__title{
-  font-size: 2.5rem;
-  margin-top: 1rem;
+  font-size: 2rem;
+  margin-top: .7rem;
   text-align: center;
 }
 
@@ -68,6 +68,13 @@ nav ul a {
   height: 4rem;
 }
 
+.image-big{
+  display: block;
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+}
+
 .flex-row{
   display: flex;
 }
@@ -86,4 +93,12 @@ nav ul a {
 
 .mb-2{
   margin-bottom: 2rem;
+}
+
+.purple-color{
+  color: #cb56d6;
+}
+
+.bold{
+  font-weight: bold;
 }
