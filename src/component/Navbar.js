@@ -6,11 +6,11 @@ import Logo from '../img/logo.png';
 const Navbar = () => {
     return(
         <nav>
-            <div class="nav-wrapper">
+            <div className="nav-wrapper">
             <Link to="/">
                 <img src={Logo} className="image" alt="Logo"/>
             </Link>
-            <ul id="nav-mobile" class="right">
+            <ul id="nav-mobile" className="right">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/">About</Link></li>
             </ul>

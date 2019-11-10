@@ -9,7 +9,7 @@ const Weclome = () => {
             <div className="weclome__area">
                 <div className="row">
                     <div className="col s10">
-                        <label for="input_text">Lease Public Key</label>
+                        <label htmlFor="input_text">Lease Public Key</label>
                         <input id="input_text" type="text" />
                     </div>
                     <div className="col s2">
@@ -20,7 +20,7 @@ const Weclome = () => {
                 </div>
                 <div className="row">
                     <div className="col s10">
-                        <label for="input_text">Building Address</label>
+                        <label htmlFor="input_text">Building Address</label>
                         <input id="input_text" type="text" />
                     </div>
                     <div className="col s2">
