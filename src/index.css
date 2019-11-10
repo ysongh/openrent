@@ -68,6 +68,12 @@ nav ul a {
 }
 
 /* utilities */
+.qr__title{
+  margin: 1rem 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
 .image{
   width: 10rem;
   height: 4rem;

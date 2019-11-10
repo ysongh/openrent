@@ -16,7 +16,7 @@ const Weclome = () => {
                         <input id="input_text" type="text" />
                     </div>
                     <div className="col s2">
-                        <Link to="/" className="waves-effect waves-light btn translateY-2">
+                        <Link to="/qr" className="waves-effect waves-light btn translateY-2">
                              >
                         </Link>
                     </div>
