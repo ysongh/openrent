@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
+import { addressData } from '../data';
+
 class CreateApartment extends Component{
     state = {
-        address: "",
+        address: "12 Jay St",
         apt: "",
         room: "",
         price: ""
@@ -13,10 +15,16 @@ class CreateApartment extends Component{
     }
 
     onSubmit(){
-        console.log(this.state.address);
-        console.log(this.state.apt);
-        console.log(this.state.room);
-        console.log(this.state.price);
+        const newData = {
+            address: this.state.address,
+            floor: this.state.apt,
+            room: this.state.room,
+            price: this.state.price,
+            year: 2020
+        }
+
+        addressData.push(newData);
+        this.props.history.push("/addressList");
     }
 
     render(){
