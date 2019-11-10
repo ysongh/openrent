@@ -78,7 +78,7 @@ class CreateApartment extends Component{
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col s12">
+                        <div className="col s6">
                         <label htmlFor="apt">Apt Number</label>
                         <input
                             type="text"
@@ -88,9 +88,7 @@ class CreateApartment extends Component{
                             value={this.state.apt}
                             onChange={this.onChange.bind(this)} />
                         </div>
-                    </div>
-                    <div className="row">
-                        <div className="col s12">
+                        <div className="col s6">
                         <label htmlFor="room">Number of Rooms</label>
                         <input
                             type="number" 
