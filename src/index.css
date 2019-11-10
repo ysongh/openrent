@@ -6,6 +6,11 @@
     box-sizing: inherit;
 }
 
+.weclome__buttonGroup{
+  display: flex;
+  flex-direction: column;
+}
+
 .image{
   width: 10rem;
 }
@@ -20,4 +25,8 @@
 
 .flex-justify-content-space-between{
   justify-content: space-between;
+}
+
+.mb-2{
+  margin-bottom: 2rem;
 }

@@ -23,7 +23,7 @@ class CreateApartment extends Component{
         return(
             <div>
                 <div className="row">
-                    <h2>Create Apartment</h2>
+                    <h2>Create Lease</h2>
                     <div className="row">
                         <div className="col s12">
                         <label htmlFor="address">Address</label>

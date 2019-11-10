@@ -12,7 +12,7 @@ class AddressList extends Component{
         return(
             <div>
                 <div className="flex-row flex-center flex-align-items-center flex-justify-content-space-between">
-                    <h2>List Apartment</h2>
+                    <h2>List of Apartment</h2>
                     <Link to="/create" className="waves-effect waves-light btn-large">
                         Create
                     </Link>
