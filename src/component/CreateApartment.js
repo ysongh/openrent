@@ -15,6 +15,8 @@ class CreateApartment extends Component{
         endDate: "",
         landLordName: "",
         landLordAddress: "",
+        yes: "",
+        no: ""
 
     }
 
@@ -33,14 +35,11 @@ class CreateApartment extends Component{
             signedDate: this.state.signedDate,
             startDate: this.state.startDate,
             endDate: this.state.endDate,
+            problem: this.state.yes !== ""
         }
 
         addressData.push(newData);
         this.props.history.push("/addressList");
-
-        console.log(this.state.landLordAddress)
-        console.log(this.state.landLordName)
-        
     }
 
     onSetSignedDate(date) {
@@ -166,6 +165,26 @@ class CreateApartment extends Component{
                                 placeholder="17 Lorimer street, 11211,  NYC"
                                 value={this.state.landLordAddress}
                                 onChange={this.onChange.bind(this)} />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col s12">
+                                <label htmlFor="landLordAddress">Is Rent Stabilize?</label>
+                                <br />
+                                <label className="mr-2">
+                                    <input
+                                        type="checkbox"
+                                        name="yes"
+                                        onChange={this.onChange.bind(this)}/>
+                                    <span>Yes</span>
+                                </label>
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="no"
+                                        onChange={this.onChange.bind(this)}/>
+                                    <span>No</span>
+                                </label>
                             </div>
                         </div>
                     </div>
