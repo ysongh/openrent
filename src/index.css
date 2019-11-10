@@ -71,6 +71,10 @@ body{
   justify-content: space-between;
 }
 
+.translateY-2{
+  transform: translateY(2rem);
+}
+
 .mb-2{
   margin-bottom: 2rem;
 }

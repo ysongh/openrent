@@ -6,13 +6,32 @@ const Weclome = () => {
         <div className="weclome">
             <h1 className="weclome__title mb-2">Weclome to Open Rent</h1>
             <p className="weclome__paragraph">Bringing transparency to New York Rental Market</p>
-            <div className="weclome__buttonGroup">
-                <Link to="/" className="waves-effect waves-light btn-large mb-2">
-                    Lease Public Key 
-                </Link>
-                <Link to="/addressList" className="waves-effect waves-light btn-large">
-                    Building Addres
-                </Link>
+            <div className="">
+                <div className="row">
+                    <div className="col s9">
+                        <label for="input_text">Lease Public Key</label>
+                        <input id="input_text" type="text" />
+                    </div>
+                    <div className="col s3">
+                        <Link to="/" className="waves-effect waves-light btn translateY-2">
+                             >
+                        </Link>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col s9">
+                        <label for="input_text">Building Address</label>
+                        <input id="input_text" type="text" />
+                    </div>
+                    <div className="col s3">
+                        <Link to="/addressList" className="waves-effect waves-light btn translateY-2">
+                            >
+                        </Link>
+                    </div>
+                </div>
+            </div>
+            <div>
+                
             </div>
             
         </div>
