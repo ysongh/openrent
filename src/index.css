@@ -13,3 +13,11 @@
 .flex-row{
   display: flex;
 }
+
+.flex-align-items-center{
+  align-items: center;
+}
+
+.flex-justify-content-space-between{
+  justify-content: space-between;
+}

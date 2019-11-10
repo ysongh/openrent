@@ -11,7 +11,13 @@ class AddressList extends Component{
     render(){
         return(
             <div>
-                <h2>List Apartment</h2>
+                <div className="flex-row flex-center flex-align-items-center flex-justify-content-space-between">
+                    <h2>List Apartment</h2>
+                    <Link to="/create" className="waves-effect waves-light btn-large">
+                        Create
+                    </Link>
+                </div>
+                
                 <table>
                     <thead>
                     <tr>

@@ -1,26 +1,11 @@
 import React, { Component } from 'react';
 
-import { addressData } from '../data';
-
-class Edit extends Component{
+class CreateApartment extends Component{
     state = {
         address: "",
         apt: "",
         room: "",
         price: ""
-    }
-
-    componentDidMount(){
-        addressData.forEach(address => {
-            if(address.id === this.props.match.params.id){
-                this.setState({
-                    address: address.address,
-                    apt: address.floor,
-                    room: address.room,
-                    price: address.price
-                })
-            }
-        });
     }
 
     onChange(e){
@@ -38,7 +23,7 @@ class Edit extends Component{
         return(
             <div>
                 <div className="row">
-                    <h2>Edit Apartment</h2>
+                    <h2>Create Apartment</h2>
                     <div className="row">
                         <div className="col s12">
                         <label htmlFor="address">Address</label>
@@ -94,4 +79,4 @@ class Edit extends Component{
     };
 };
 
-export default Edit;
+export default CreateApartment;
