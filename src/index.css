@@ -102,3 +102,8 @@ nav ul a {
 .bold{
   font-weight: bold;
 }
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}

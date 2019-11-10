@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-
-import { addressData } from '../data';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 class CreateApartment extends Component{
     state = {
         address: "12 Jay St",
         apt: "",
         room: "",
-        price: ""
+        price: "",
+        signedDate: "",
+        startDate: "",
+        endDate: "",
+
     }
 
     onChange(e){
@@ -15,16 +19,37 @@ class CreateApartment extends Component{
     }
 
     onSubmit(){
-        const newData = {
-            address: this.state.address,
-            floor: this.state.apt,
-            room: this.state.room,
-            price: this.state.price,
-            year: 2020
-        }
+        // const newData = {
+        //     address: this.state.address,
+        //     floor: this.state.apt,
+        //     room: this.state.room,
+        //     price: this.state.price,
+        //     year: 2020
+        // }
 
-        addressData.push(newData);
-        this.props.history.push("/addressList");
+        // addressData.push(newData);
+        // this.props.history.push("/addressList");
+        console.log(this.state.signedDate)
+        console.log(this.state.startDate)
+        console.log(this.state.endDate)
+    }
+
+    onSetSignedDate(date) {
+        this.setState({
+            signedDate: date
+        });
+    }
+
+    onSetStartDate(date) {
+        this.setState({
+            startDate: date
+        });
+    }
+
+    onSetEndDate(date) {
+        this.setState({
+            endDate: date
+        });
     }
 
     render(){
@@ -78,6 +103,37 @@ class CreateApartment extends Component{
                             name="price"
                             value={this.state.price}
                             onChange={this.onChange.bind(this)} />
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col s12 flex-col">
+                            <label htmlFor="price">Lease Signed Date</label>
+                            <DatePicker
+                                className="input-text2 form-control form-control-lg"
+                                placeholderText="2020/01/20"
+                                selected={this.state.signedDate}
+                                onChange={this.onSetSignedDate.bind(this)} 
+                                dateFormat="yyyy/MM/dd" />
+                            </div>
+                    </div>
+                    <div className="row">
+                        <div className="col s6 flex-col">
+                            <label htmlFor="price">Lease Start Date</label>
+                            <DatePicker
+                                className="input-text2 form-control form-control-lg"
+                                placeholderText="2020/01/20"
+                                selected={this.state.startDate}
+                                onChange={this.onSetStartDate.bind(this)} 
+                                dateFormat="yyyy/MM/dd" />
+                        </div>
+                        <div className="col s6 flex-col">
+                            <label htmlFor="price">Lease End Date</label>
+                            <DatePicker
+                                className="input-text2 form-control form-control-lg"
+                                placeholderText="2020/01/20"
+                                selected={this.state.endDate}
+                                onChange={this.onSetEndDate.bind(this)} 
+                                dateFormat="yyyy/MM/dd" />
                         </div>
                     </div>
                     <button className="btn-large waves-effect waves-light button__submit" onClick={this.onSubmit.bind(this)} >Submit</button>
