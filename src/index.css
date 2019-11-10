@@ -15,9 +15,9 @@ body{
   padding: .5rem 2rem;
 }
 
-.weclome__buttonGroup{
-  display: flex;
-  flex-direction: column;
+.weclome__area{
+  background-color: #fcf8f8ee;
+  padding: 1rem 0;
 }
 
 .weclome__title{
