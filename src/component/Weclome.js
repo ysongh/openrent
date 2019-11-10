@@ -5,7 +5,7 @@ const Weclome = () => {
     return(
         <div>
             <h1>Weclome</h1>
-            <Link to="/edit" className="waves-effect waves-light btn">
+            <Link to="/addressList" className="waves-effect waves-light btn">
                 Address
             </Link>
         </div>
