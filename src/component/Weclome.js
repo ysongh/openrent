@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Weclome = () => {
     return(
-        <div>
+        <div className="weclome">
             <h1 className="weclome__title mb-2">Weclome to Open Rent</h1>
+            <p className="weclome__paragraph">Bringing transparency to New York Rental Market</p>
             <div className="weclome__buttonGroup">
                 <Link to="/" className="waves-effect waves-light btn-large mb-2">
                     Lease Public Key 

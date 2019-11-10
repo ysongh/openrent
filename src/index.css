@@ -11,6 +11,9 @@ body{
 }
 
 /* welcome */
+.weclome{
+  padding: .5rem 2rem;
+}
 
 .weclome__buttonGroup{
   display: flex;
@@ -23,13 +26,35 @@ body{
   text-align: center;
 }
 
+.weclome__paragraph{
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
 /* apartment list */
+.apartmentList{
+  padding: .5rem 1.7rem;
+}
 
 .apartmentList__title{
   font-size: 2.5rem;
   margin-top: 1rem;
 }
 
+/* edit apartment */
+.editApartment{
+  padding: .5rem 1.7rem;
+}
+
+/* button */
+.button__submit{
+  display: block;
+  width: 100%;
+}
+
+/* utilities */
 .image{
   width: 10rem;
 }

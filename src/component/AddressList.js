@@ -10,7 +10,7 @@ class AddressList extends Component{
 
     render(){
         return(
-            <div>
+            <div className="apartmentList">
                 <div className="flex-row flex-center flex-align-items-center flex-justify-content-space-between">
                     <h2 className="apartmentList__title">List of Apartment</h2>
                     <Link to="/create" className="waves-effect waves-light btn-large">

@@ -36,7 +36,7 @@ class Edit extends Component{
 
     render(){
         return(
-            <div>
+            <div className="editApartment">
                 <div className="row">
                     <h2 className="weclome__title">Edit Apartment</h2>
                     <div className="row">
@@ -87,7 +87,7 @@ class Edit extends Component{
                             onChange={this.onChange.bind(this)} />
                         </div>
                     </div>
-                    <button className="btn waves-effect waves-light" onClick={this.onSubmit.bind(this)} >Submit</button>
+                    <button className="btn-large waves-effect waves-light button__submit" onClick={this.onSubmit.bind(this)} >Submit</button>
                 </div>
             </div>
         )
